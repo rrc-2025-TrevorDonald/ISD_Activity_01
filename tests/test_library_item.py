@@ -5,15 +5,15 @@ the following command:
     python -m unittest tests/test_book.py
 
 """
-__author__ = ""
-__version__ = ""
+__author__ = "Trevor Donald"
+__version__ = "1.0.0"
 
 import unittest
 from library_item.library_item import LibraryItem
 from genre.genre import Genre
 
 class TestClient(unittest.TestCase):
-    
+
     def setUp(self):
         self.libraryitem = LibraryItem("The_Lord_of_the_Rings",
                                        "J.R.R. Tolkien", Genre.FANTASY)
