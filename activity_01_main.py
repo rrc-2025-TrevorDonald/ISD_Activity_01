@@ -21,20 +21,22 @@ def main():
     # with valid inputs.
     # Use your own unique valid values for the inputs to the class.
 
-    book = LibraryItem("Bible", "Some guy", Genre.FICTION)
+    book = LibraryItem(666, "Bible", "Some guy", Genre.FICTION, False)
 
     # 2. Using the instance defined above, and the class Accessors, print
     # each of the attributes of the LibraryItem instance.
 
+    print(book.item_id)
     print(book.title)
     print(book.author)
     print(book.genre)
+    print(book.is_borrowed)
 
     # 3. Code a statement which creates an instance of the LibraryItem class
     # with one or more invalid inputs.
     # Use your own unique valid values for the inputs to the class.
     try:
-        book2 = LibraryItem("", "", Genre.TRUE_CRIME)
+        book2 = LibraryItem(666, "", "", Genre.FICTION, False)
         print(book2.title)
         print(book2.author)
         print(book2.genre)
