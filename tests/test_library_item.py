@@ -91,7 +91,7 @@ class TestClient(unittest.TestCase):
         """
         with self.assertRaises(ValueError):
             LibraryItem(9, "The_Lord_of_the_Rings",
-                        "J.R.R. Tolkien", "Invalid", "Invalid")
+                        "J.R.R. Tolkien", Genre.FANTASY, "Invalid")
 
     def test_item_id_accessor(self):
         """
