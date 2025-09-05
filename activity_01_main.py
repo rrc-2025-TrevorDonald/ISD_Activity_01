@@ -21,7 +21,8 @@ def main():
     # with valid inputs.
     # Use your own unique valid values for the inputs to the class.
 
-    book = LibraryItem(666, "Bible", "Some guy", Genre.FICTION, False)
+    book = LibraryItem(9,"The_Lord_of_the_Rings", "J.R.R. Tolkien",
+                       Genre.FANTASY, True)
 
     # 2. Using the instance defined above, and the class Accessors, print
     # each of the attributes of the LibraryItem instance.
@@ -36,7 +37,7 @@ def main():
     # with one or more invalid inputs.
     # Use your own unique valid values for the inputs to the class.
     try:
-        book2 = LibraryItem(666, "", "", Genre.FICTION, False)
+        book2 = LibraryItem(9,"", "", Genre.FANTASY, True)
         print(book2.title)
         print(book2.author)
         print(book2.genre)
